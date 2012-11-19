@@ -9,7 +9,6 @@ namespace tar_cs
     {
         private readonly Stream outStream;
         protected byte[] buffer = new byte[1024];
-        private bool isClosed;
         public bool ReadOnZero = true;
 
         /// <summary>
@@ -30,7 +29,10 @@ namespace tar_cs
 
         public void Dispose()
         {
-            Close();
+            AlignTo512(0, true);
+            AlignTo512(0, true);
+
+            GC.SuppressFinalize(this);
         }
 
         #endregion
@@ -69,8 +71,6 @@ namespace tar_cs
         public virtual void Write(Stream data, long dataSizeInBytes, string name, int userId, int groupId, int mode,
                                   DateTime lastModificationTime)
         {
-            if(isClosed)
-                throw new TarException("Can not write to the closed writer");
             WriteHeader(name, lastModificationTime, dataSizeInBytes, userId, groupId, mode);
             WriteContent(dataSizeInBytes, data);
             AlignTo512(dataSizeInBytes,false);
@@ -135,14 +135,6 @@ namespace tar_cs
                 OutStream.WriteByte(0);
                 size++;
             }
-        }
-
-        public virtual void Close()
-        {
-            if (isClosed) return;
-            AlignTo512(0,true);
-            AlignTo512(0,true);
-            isClosed = true;
         }
     }
 }
