@@ -5,20 +5,33 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tar-cs", "tar-cs\tar-cs.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tar", "tar\tar.csproj", "{CBF5DA3D-8815-433A-90C6-0E235BDD94AC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tar-cs.Tests", "tar-cs.Tests\tar-cs.Tests.csproj", "{DBD865D7-4289-4B8B-96A8-26E9BED449B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		GenerateTestFiles|Any CPU = GenerateTestFiles|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B9189786-191B-42C7-8029-244E0DA8DA21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B9189786-191B-42C7-8029-244E0DA8DA21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9189786-191B-42C7-8029-244E0DA8DA21}.GenerateTestFiles|Any CPU.ActiveCfg = GenerateTestFiles|Any CPU
+		{B9189786-191B-42C7-8029-244E0DA8DA21}.GenerateTestFiles|Any CPU.Build.0 = GenerateTestFiles|Any CPU
 		{B9189786-191B-42C7-8029-244E0DA8DA21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9189786-191B-42C7-8029-244E0DA8DA21}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CBF5DA3D-8815-433A-90C6-0E235BDD94AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CBF5DA3D-8815-433A-90C6-0E235BDD94AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBF5DA3D-8815-433A-90C6-0E235BDD94AC}.GenerateTestFiles|Any CPU.ActiveCfg = GenerateTestFiles|Any CPU
+		{CBF5DA3D-8815-433A-90C6-0E235BDD94AC}.GenerateTestFiles|Any CPU.Build.0 = GenerateTestFiles|Any CPU
 		{CBF5DA3D-8815-433A-90C6-0E235BDD94AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBF5DA3D-8815-433A-90C6-0E235BDD94AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBD865D7-4289-4B8B-96A8-26E9BED449B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBD865D7-4289-4B8B-96A8-26E9BED449B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBD865D7-4289-4B8B-96A8-26E9BED449B4}.GenerateTestFiles|Any CPU.ActiveCfg = GenerateTestFiles|Any CPU
+		{DBD865D7-4289-4B8B-96A8-26E9BED449B4}.GenerateTestFiles|Any CPU.Build.0 = GenerateTestFiles|Any CPU
+		{DBD865D7-4289-4B8B-96A8-26E9BED449B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBD865D7-4289-4B8B-96A8-26E9BED449B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
