@@ -50,5 +50,11 @@ namespace tar_cs.Tests.TestHelpers
         {
             return new FileEntry(path, new FileStream(Path.Combine(ResourcesFolder.FullName, path), FileMode.Open));
         }
+
+        protected StreamReader GetExpectedStream(string expectedFileName)
+        {
+            var resultFolder = Path.Combine(ResourcesFolder.FullName, "results");
+            return new StreamReader(Path.Combine(resultFolder, expectedFileName) + ".tar");
+        }
     }
 }
