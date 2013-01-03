@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace tar_cs.Tests
+namespace tar_cs.Tests.TestHelpers
 {
     // From https://github.com/libgit2/libgit2sharp/ (DirectoryHelper.cs)
     public static class DirectoryHelper
